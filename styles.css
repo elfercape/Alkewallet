@@ -1,0 +1,37 @@
+:root {
+  --dark-purple: #2c1145;
+  --accent-purple: #6a11cb;
+  --success-green: #28a745;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.navbar {
+  background-color: var(--dark-purple) !important;
+}
+
+.card-wallet {
+  background: linear-gradient(135deg, var(--dark-purple) 0%, var(--accent-purple) 100%);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 30px;
+}
+
+.btn-primary {
+  background-color: var(--accent-purple);
+  border: none;
+  border-radius: 10px;
+}
+.btn-primary:hover {
+  background-color: var(--dark-purple);
+}
+
+.transaction-item {
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border-left: 5px solid var(--accent-purple);
+}

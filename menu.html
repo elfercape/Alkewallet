@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard - Alke Wallet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark mb-4 p-3"><span class="navbar-brand">ALKE WALLET</span></nav>
+    <div class="container">
+      <div class="card card-wallet shadow text-center mb-4">
+        <p class="mb-0 opacity-75">Saldo Disponible</p>
+        <h1 class="current-balance display-3 font-weight-bold">$0</h1>
+      </div>
+      <div class="row mb-4">
+        <div class="col-6">
+          <a href="deposit.html" class="btn btn-white btn-block shadow-sm py-3 bg-white"
+            >📥 Depositar</a
+          >
+        </div>
+        <div class="col-6">
+          <a href="sendmoney.html" class="btn btn-white btn-block shadow-sm py-3 bg-white"
+            >📤 Enviar</a
+          >
+        </div>
+      </div>
+      <h5>Últimos Movimientos</h5>
+      <div id="transaction-container" class="list-group"></div>
+      <a href="transactions.html" class="btn btn-link btn-block mt-2">Ver historial completo</a>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

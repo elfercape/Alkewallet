@@ -1,37 +1,54 @@
-:root {
-  --dark-purple: #2c1145;
-  --accent-purple: #6a11cb;
-  --success-green: #28a745;
-}
-
+/* Fondos y Tipografía */
 body {
-  background-color: #f8f9fa;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #1a0b2e; /* Púrpura muy oscuro */
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
 }
 
-.navbar {
-  background-color: var(--dark-purple) !important;
-}
-
-.card-wallet {
-  background: linear-gradient(135deg, var(--dark-purple) 0%, var(--accent-purple) 100%);
-  color: white;
+/* Tarjetas con efecto de cristal y bordes neón */
+.card {
+  background: #2d1b4d;
+  border: 1px solid #4a2c82;
   border-radius: 20px;
-  border: none;
-  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* Botones con degradado neón */
 .btn-primary {
-  background-color: var(--accent-purple);
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
   border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(142, 45, 226, 0.4);
+}
+
+/* Inputs adaptados al modo oscuro */
+.form-control {
+  background: #3b2466;
+  border: 1px solid #6e44ff;
+  color: white !important;
   border-radius: 10px;
 }
-.btn-primary:hover {
-  background-color: var(--dark-purple);
+
+.form-control:focus {
+  background: #462b7a;
+  border-color: #8e2de2;
+  box-shadow: 0 0 0 0.2rem rgba(142, 45, 226, 0.25);
 }
 
-.transaction-item {
-  border-radius: 12px;
-  margin-bottom: 10px;
-  border-left: 5px solid var(--accent-purple);
+/* Estilo para los Modales */
+.modal-content {
+  background: #2d1b4d;
+  border: 1px solid #6e44ff;
+  border-radius: 20px;
+}
+
+.text-muted {
+  color: #a291c2 !important;
 }
